@@ -1,1 +1,2 @@
 # Mortality risk prediction on hospitalization level using radiology reports with statistical, machine and deep learning techniques
+To predict a mortality risk, we built logistic regression (LR), gradient boosting (XGB) and feedforward neural network (FNN) using clinical characteristics and radiology reports, which were converted into numerical feature vectors utilizing Bidirectional Encoder Representations from Transformers (BERT). To evaluate our models we used ROC AUC, PR AUC, Accuracy, Sensitivity, Specificity, Precision and F1 score.
