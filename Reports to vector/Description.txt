@@ -1,0 +1,11 @@
+This code is used to get 768 BERT embedding of radiology reports for one hospitalization.  Before running this code, run the code “Data_Preparation” to get prepared dataset (df.pkl).
+Variable, which has to be transformed, is aggregated as a list. We get an embedding from each radiology report using pretrained German BERT model and German BERT tokenizer. After it we calculate mean to get hospitalization embedding and save as data frame with 768 new features.
+Global variables: 
+•	cwd - Set working directory
+•	tokenizer - BERT tokenizer
+•	device - use GPU if available
+•	bert_model - get pretrained BERT model
+Global functions:
+•	get_document_embedding – Get document embedding using pretrained German BERT model and German BERT tokenizer
+•	get_day_embedding – Get hospitalization embedding using embedding from defined above function get_day_embedding
+•	embeddings_to_tensor - Return tensor of embeddings
